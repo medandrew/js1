@@ -1,0 +1,23 @@
+html, body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+.gallery {
+    width: 860px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.gallery .photos {
+    position: relative;
+    height: 500px;
+}
+.gallery .photos img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.gallery .photos img.showed {
+    opacity: 1;
+}

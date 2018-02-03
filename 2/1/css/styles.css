@@ -1,0 +1,25 @@
+html, body{
+    margin: 0;
+
+}
+body {
+    display: flex;
+    height: 100vh;
+    outline: 1px solid red;
+}
+form {
+    margin: auto;
+}
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+.error {
+    outline: 1px solid red;
+}
+.message_error {
+    color: red;
+}
+
+
+
