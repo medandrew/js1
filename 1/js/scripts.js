@@ -38,21 +38,24 @@ window.addEventListener('load', function(e){
     }
 
     function calculate(operator) {
+        var a = parseInt(num1.value);
+        var b = parseInt(num2.value);
+
         switch (operator) {
             case '+':
-                res = parseInt(num1.value) + parseInt(num2.value);
+                res = a + b;
                 break;
             case '-':
-                res = parseInt(num1.value) - parseInt(num2.value);
+                res = a - b;
                 break;
             case '*':
-                res = parseInt(num1.value) * parseInt(num2.value);
+                res = a * b;
                 break;
             case '/':
                 if (num2.value == 0) {
                     res = 'Делить на 0 не лучшее решение';
                 } else {
-                    res = parseInt(num1.value) / parseInt(num2.value);
+                    res = a / b;
                 }
                 break;
             default:
