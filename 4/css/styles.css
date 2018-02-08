@@ -1,0 +1,71 @@
+html, body{
+    margin: 0;
+    background: #eee;
+}
+.faq {
+    max-width: 600px;
+    padding: 30px;
+}
+.faq .item {
+    margin: 20px 0;
+}
+.faq .item .ask,
+.faq .item .ask1,
+.faq .item .ask2 {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font: 30px 'Open Sans', sans-serif;
+}
+.faq .item .answer,
+.faq .item .answer1,
+.faq .item .answer2 {
+    display: none;
+    padding: 0 15px;
+    overflow: hidden;
+    background: #ff0;
+    border-radius: 5px;
+    font: 16px 'Open Sans', sans-serif;
+}
+.gallery {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+.gallery .photos {
+    position: relative;
+    height: 500px;
+}
+.gallery .photos img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.gallery .photos img.showed {
+    opacity: 1;
+}
+.gallery .prev,
+.gallery .next {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.gallery .prev {
+    left: 0;
+    background: url("../img/left.png") center no-repeat;
+}
+.gallery .prev:hover {
+    background: url("../img/left_hover.png") center no-repeat;
+}
+.gallery .next {
+    right: 0;
+    background: url("../img/right.png") center no-repeat;
+}
+.gallery .next:hover {
+    background: url("../img/right_hover.png") center no-repeat;
+}
