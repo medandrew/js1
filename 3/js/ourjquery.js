@@ -80,7 +80,7 @@ function OurJquery(elements){
     /* Первый вариант */
     this.css = function(param1, param2){
         if (typeof(param1) === 'string' && param2 === undefined) {
-            return this.elements[0].style[param1];
+            return this.elements.length > 0 ? this.elements[0].style[param1] : null;
         }
 
         if (typeof(param1) === 'object') {
@@ -114,7 +114,7 @@ function OurJquery(elements){
     };
 
     function getCss(elem, x) {
-        return elem[0].style[x];
+        return elem.length > 0 ? elem[0].style[x] : null;
     }
 
     function setCss(elem, x, y) {
