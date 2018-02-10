@@ -59,23 +59,25 @@ $(function(){
         }
 
         function prev() {
-            images.eq(i).removeClass('showed').prev().addClass('showed');
+            images.eq(i).removeClass('showed');
             i--;
 
             if (i < 0) {
                 i = count - 1;
-                images.eq(i).addClass('showed');
             }
+
+            images.eq(i).addClass('showed');
         }
 
         function next() {
-            images.eq(i).removeClass('showed').next().addClass('showed');
+            images.eq(i).removeClass('showed');
             i++;
 
             if (i >= count) {
                 i = 0;
-                images.eq(i).addClass('showed');
             }
+
+            images.eq(i).addClass('showed');
         }
     }
 });
